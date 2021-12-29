@@ -1,0 +1,565 @@
+/* obecne */
+body {
+  overflow-y: auto !important;
+}
+
+#civicrm-menu {
+  z-index: 10 !important;
+}
+
+.title {
+  padding: 20px !important;
+}
+
+.title-label {
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+
+.error, #crm-notification-container {
+  display: none !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--color-darkest-gray) !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: var(--color-orange) !important;
+}
+
+button:hover {
+  background: var(--color-orange);
+}
+
+
+
+.crm-footer, #access, .hiddenElement {
+  display: none;
+}
+
+.fa-check-circle-o:before {
+  content: "" !important;
+}
+
+button  {
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+} 
+
+.ui-widget-overlay {
+  background-color: #110B22 !important;
+}
+
+.fs-15 {
+    font-size: 15px;
+  }
+  
+#content {
+  background: var(--color-lightest-gray);
+}
+
+.drop-hover:hover {
+  background:	var(--color-lightest-gray);
+  cursor: pointer;
+}
+
+/* search*/
+th {
+  background: var(--color-lightest-gray) 0% 0% no-repeat padding-box !important;
+  border: none !important;
+}
+
+.cara {
+  background: var(--color-table-divider);
+  width: 1.5px;
+  height: 100%;
+  right: 0;
+  margin-top: -8px;
+  position: absolute;
+}
+
+.search {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 2%;
+  width: 96%;
+}
+
+.crm-accordion-header {
+  font-size: 20px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.crm-accordion-header:hover {
+  color: gray;
+}
+
+.search label {
+  width: 200px;
+}
+
+.search .show-hide-radio label {
+  width: auto;
+}
+
+.search .show-hide-radio {
+  display: inline-block;
+}
+
+.search input:not(input[type=radio], input[type=checkbox]), .search .crm-select2, .search .select2-choices {
+  width: 300px;
+  border-radius: 10px;
+  height: 30px;
+  border: none !important;
+  box-shadow: none;
+  background: white !important;
+}
+
+.search .select2-container .select2-choices {
+  border: none !important;
+
+}
+
+.search input[type=checkbox] {
+  display: inline-block;
+  width: auto;
+}
+
+
+/*search table*/
+.search-image {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  object-fit:cover;
+  margin-right: 10px;
+}
+
+.crm-results-block {
+  padding: 20px;
+  background: var(--color-white);
+  border-radius: 20px;
+}
+
+.crm-search-results {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  overflow-x: auto;
+  white-space:nowrap;
+  height: 600px !important;
+}
+
+.td-long {
+  max-width: 150px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.td-name {
+  max-width: 80px;
+}
+
+.td-date {
+  max-width: 50px;
+}
+
+.crm-search-results td {
+  white-space:nowrap;
+  vertical-align: middle !important;
+}
+
+.crm-search-results th {
+  position: sticky !important;
+   top: 0; 
+   z-index: 1;
+}
+
+.sticky-col {
+  position: -webkit-sticky;
+  position: sticky;
+  background: var(--color-white) !important;
+  z-index: 2 !important;
+}
+
+.sticky .sticky-col {
+  background: var(--color-lightest-gray) 0% 0% no-repeat padding-box !important;
+}
+
+.first-col {
+  left: 0px;
+}
+
+.second-col {
+  left: 30px;
+}
+
+.crm-pager, form-item {
+  display: inline-block;
+}
+
+.dropdown {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.drop2 a {
+  display: block;
+  margin-left: 30px;
+}
+
+.dropdown-menu {
+  min-width: 130px !important;
+}
+
+.table td a {
+  color: var(--color-darkest-gray);
+}
+
+.table td a:hover {
+  color: var(--color-orange);
+}
+
+.table td {
+  color: var(--color-dark-gray);
+}
+
+.flex-center {
+  align-items: center; 
+  flex-grow: 1;
+}
+
+.table-light, .table-light>td, .table-light>th {
+  background-color: var(--color-white) !important;
+  color: var(--color-dark-gray);
+}
+
+#wrapper #content-wrapper {
+  background-color: var(--color-lightest-gray);
+}
+
+/* 
+******************************************************
+*
+HELP BUBBLE
+*
+******************************************************
+*/
+.hover {
+  background: var(--color-white);
+  border-radius: 15px;
+  color: var(--color-black) !important;
+  padding: 0px 10px;
+  filter: drop-shadow(0 10px 20px var(--color-shadow));
+  z-index: 1;
+  margin-top: 3px;
+  margin-right: 5px;
+  font-size: 13px !important;
+}
+
+.hover-left {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 2.5px;
+  float: right;
+  margin-left: -200px;
+  margin-right: 14px;
+  z-index: 2;
+}
+
+.hover-right:after {
+    content: '';
+    height: 1.8px;
+    background: var(--color-white);
+    width: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    left: -14px;
+    position: absolute;
+    top: 50%;
+}
+
+.hover-right:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid var(--color-white);
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(-225deg);
+  -webkit-transform: rotate(-225deg);
+  cursor: pointer;
+  margin-top: 2px;
+  left: -14px;
+}
+
+.hover-left-arrow:after {
+    content: '';
+    height: 1.8px;
+    background: var(--color-black);
+    width: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    float: right;
+    position: absolute;
+    margin-left: -14px;
+    margin-top: 14px;
+}
+
+.hover-left-arrow:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: solid var(--color-black);
+  border-width: 0 2px 2px 0;
+  padding: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  cursor: pointer;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+/* 
+******************************************************
+*
+LIGHTBOX
+*
+******************************************************
+*/
+
+.ui-widget-overlay {
+  background: var(--color-black);
+  opacity: .6;
+}
+
+.modal-dialog {
+  pointer-events: all !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+}
+
+.ui-dialog, .blockOverlay {
+  border-radius: 25px;
+}
+
+.ui-widget {
+  zoom: 0 !important;
+  font-size: 1em !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.crm-dialog-titlebar-print, .ui-dialog-title {
+  display: none !important;
+}
+
+.ui-dialog-titlebar {
+  background: none;
+  border: none;
+  margin-bottom: -25px;
+  margin-top: 15px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.ui-dialog-buttonpane {
+  float: left;
+  border: none;
+}
+
+.ui-dialog-buttonpane button {
+  border: none;
+  color: var(--color-white);
+  height: 39px;
+  border-radius: 20px;
+}
+
+
+.ui-dialog-buttonpane button[data-identifier="_qf_Activity_upload"] {
+  background: var(--color-orange);
+}
+
+.ui-dialog-buttonpane button[data-identifier="_qf_Activity_cancel"] {
+  background: var(--color-dark-gray);
+}
+
+.ui-dialog-buttonpane {
+  background: unset;
+}
+
+/* close icon */
+.ui-dialog-titlebar-close {
+  border: none !important;
+  border-radius: 100%;
+  height: 33px !important;
+  width: 33px !important;
+  background: var(--color-dark-gray) !important;
+  color: var(--color-white) !important;
+}
+
+.ui-dialog-titlebar-close:hover {
+  background: var(--color-purple-gray) !important;
+  border: none;
+  color: var(--color-white);
+}
+
+.crm-dialog-titlebar-resize {
+  right: 3em !important;
+}
+
+.ui-button-icon {
+  width: 100%;
+  height: 100%;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* close */
+.fa-times:before {
+  content: url(https://mvp1portal.josiahventure.com/sites/all/themes/josiahventuretheme/images/cross.svg) !important;
+  margin-left: -18.5px;
+  margin-top: -15px;
+  width:33px;
+  height:33px;  
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* expand compress */
+.fa-expand:before, .fa-compress:before {
+  content: "\f065";
+  margin-left: -18.5px;
+  margin-top: -16.5px;
+}
+
+.small-dialog-action {
+  display: flex !important;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.small-dialog-action .ui-dialog-content, .small-dialog-action .ui-dialog-buttonset {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-dialog-action .ui-dialog-content {
+  height: 106px;
+}
+
+.small-dialog-action .ui-dialog-content .status {
+  background: none;
+  font-size: 20px;
+  color: var(--color-orange);
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+.small-dialog-action .ui-dialog-buttonset {
+  width: 100%;
+  border-top: 1px solid #EFF2F7;
+  height: 55px;
+}
+
+.small-dialog-action .ui-dialog-buttonpane button {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background: none;
+  color: var(--color-dark-gray) !important;
+  font-size: 20px !important;
+}
+
+.small-dialog-action .ui-dialog-buttonpane button:hover {
+  color: var(--color-black) !important;
+}
+
+.small-dialog-action .ui-dialog-buttonset button:first-child {
+  border-right: 1px solid #EFF2F7;
+  border-radius: 0;
+}
+  
+.small-dialog-action .ui-dialog-buttonpane {
+  padding: 0;
+  margin: -1px;
+}
+
+.small-dialog-action .ui-dialog-titlebar  {
+  display: none; 
+}
+
+.small-dialog-action .status {
+  background-image: none;
+}
+
+/* 
+******************************************************
+*
+BUTTONS
+*
+******************************************************
+*/
+
+/* submit/edit */
+.edit-button, .crm-submit-buttons .crm-form-submit.default {
+  background: var(--color-orange);
+}
+
+.edit-button:hover, .crm-submit-buttons .crm-form-submit.default:hover {
+  background: var(--color-light-orange);
+}
+
+/* delete/cancel */
+.delete-button, .crm-submit-buttons .crm-form-submit.cancel {
+  background: var(--color-dark-gray);
+}
+
+.delete-button:hover, .crm-submit-buttons .crm-form-submit.cancel:hover {
+  background: var(--color-purple-gray);
+}
+
+.edit-button, .delete-button, .crm-submit-buttons button, .ui-dialog-buttonset button {
+  border-radius: 20px;
+   color: var(--color-white) !important;
+   height: 39px;
+   width: auto;
+   padding: 0 20px;
+   margin-right: 10px;
+   display: inline-flex;
+   align-items: center;
+}
+
+.edit-button:hover, .delete-button:hover, .crm-submit-buttons button:hover, .ui-dialog-buttonset button:hover {
+  border: none;
+  color: var(--color-white) !important;
+}
+
+

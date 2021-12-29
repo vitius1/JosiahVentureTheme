@@ -1,0 +1,100 @@
+/*
+reversed
+:root {
+  --image-size: 142px;
+  --dashboard-height: 224px;
+  
+  --color-white: black;
+  --color-dark-gray: #8b8772;
+  --color-orange: #0099ff;
+  --color-light-orange: #006bb2;
+  --color-black: white;
+  --color-darkest-gray: #b6afa8;
+  --color-light-blue: #2b2506;
+  --color-lightest-blue: #1c1800;
+  --color-purple-gray: #434a2f;
+  --color-lightest-gray: #070704;
+  --color-light-gray: #161714;
+  --color-gray: #262c17;
+  --color-full-black: #eef4dd;
+  --color-divider: #d5cfbd;
+  --color-table-divider: #100d08;
+  --color-box-shadow: #0f0f0f;
+  --color-search: #0c0c06;
+}
+*/
+
+:root {
+  --image-size: 130px; 
+  --dashboard-height: 224px;
+  
+  --color-white: white;
+  --color-dark-gray: #74788D;
+  --color-orange: #FF6600;
+  --color-light-orange: #ff944d;
+  --color-black: black;
+  --color-darkest-gray: #495057;
+  --color-light-blue: #D4DAF9;
+  --color-blue: #556EE6;
+  --color-gray-blue: #B1B8E0;
+  --color-lightest-blue: #E7EAFD;
+  --color-light-purple-gray: #D9D3E8;
+  --color-purple-gray: #BCB5D0;
+  --color-lightest-gray: #F8F8FB;
+  --color-light-gray: #E9E8EB;
+  --color-gray: #D9D3E8;
+  --color-full-black: #110B22;
+  --color-divider: #2A3042;
+  --color-table-divider: #EFF2F7;
+  --color-box-shadow: #F0F0F0;
+  --color-search: #F3F3F9;
+  --color-shadow: #0000004D;
+  --color-green: #21D593;
+}
+
+ 
+
+
+
+
+
+
+.purple-gray {
+  background: var(--color-purple-gray);
+  color: var(--color-white) !important;
+}
+
+.light-blue {
+  background: var(--color-light-blue);
+}
+
+.light-blue:hover {
+  background: var(--color-lightest-blue);
+}
+
+.orange {
+  background: var(--color-orange);
+  color: var(--color-white) !important;
+}
+
+.orange:hover {
+  background: var(--color-light-orange);
+  color: var(--color-white) !important;
+}
+
+.orange-text {
+  color: var(--color-orange) !important;
+}
+
+.white-text {
+  color: var(--color-white) !important;
+}
+
+.black-text {
+  color: var(--color-black) !important;
+}
+
+.dark-gray-text {
+  color: var(--color-dark-gray);
+}
+

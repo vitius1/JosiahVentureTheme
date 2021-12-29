@@ -1,0 +1,359 @@
+.activity-field {
+  background: var(--color-lightest-gray) !important;
+  width: 100%;
+  margin-bottom: 2px;
+  padding: 13px;
+}
+
+
+
+.activity-field .activity-inline {
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+.activity-field label {
+  margin: 0;
+}
+
+.crm-activity-form-block table {
+  width: 100%;
+}
+
+label {
+  font-weight: normal;
+}
+
+.crm-form-date, .crm-form-select, .select2-container, .select2-choice, .select2-choices {
+  border: none !important;
+  background: none !important;
+  color: #556EE6 !important;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.select2-arrow, #swap_target_assignee {
+  display: none !important;
+}
+
+/* with contacts container */
+.crm-activity-form-block-target_contact_id .select2-choices {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.crm-activity-form-block-target_contact_id .select2-container {
+  width: auto !important;
+  
+}
+
+.crm-activity-form-block-target_contact_id .select2-choices:after {
+  content: '+ Add a Name';
+  color: var(--color-orange);
+  font-style: italic;
+}
+
+/* with contacts */
+.crm-activity-form-block-target_contact_id .select2-search-choice {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  color: #556EE6 !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* details */
+.crm-form-time, .crm-accordion-header, .cke_bottom, .cke_top {    
+  display: none;
+}
+
+#cke_details, #cke_1_top {
+  border: none;
+}
+
+.show-ckeditor {
+  float: right;
+  cursor: pointer;
+}
+
+.show-ckeditor:hover {
+  color: var(--color-orange);
+}
+
+/* category */
+
+.category a.dropdown-toggle {
+  width: 220px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color:var(--color-blue) !important;
+  padding-left: 5px;
+  font-style: italic;
+}
+
+.category .dropdown-toggle::before {
+  content: '+ Add';
+  color: var(--color-orange);
+}
+
+.category a.dropdown-toggle[aria-expanded="true"] {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 25px 25px 0 0;
+  background: var(--color-white);
+}
+
+.category .dropdown-toggle[aria-expanded="true"]::before {
+  content: 'Select Categories';
+  color: var(--color-orange);
+  margin-left: 5px;
+}
+
+.category .dropdown-menu {
+  -webkit-animation-name: none;
+  animation-name: none;
+  overflow: hidden;
+}
+
+.category .dropdown {
+margin-left: 0; 
+}
+
+#categories {
+  width: 220px;
+  border-radius: 0 0 20px 20px;
+}
+
+#categories label {
+  width: 90%;
+  margin-left: 3%;
+  cursor: pointer;
+  color: var(--color-darkest-gray);
+}
+
+
+
+
+/* more info text area */
+#what-offer-more textarea {
+  height: 4em;
+  width: 6000em;
+  width: 100%;
+  border: none;
+}
+
+#what-offer-more textarea:focus-visible {
+  outline: none;
+}
+
+#what-offer-more .html-adjust {
+  width: 100%;
+}
+
+#what-offer-more {
+  margin-top: 8.5px;
+  margin-bottom: 12px;
+}
+
+/* what can we offer */
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #556EE6;
+  margin-top: 10px;
+  display: none;
+}
+
+input[type='checkbox'] + *::before { 
+content: "\00a0";
+display: inline-flex;
+justify-content: center;
+align-items: bottom;
+line-height: 1.5em;
+width: 16px;
+height: 16px;
+border-radius: 3px;
+border: 1px solid #556EE6;
+font-size: 10px;
+cursor: pointer;
+margin-right: 8.5px;
+}
+
+input[type='checkbox']:checked + *::before {
+font-size: 10px;
+font-weight: bold;
+content: "✓";
+font-family: 'M PLUS 1p', sans-serif;
+-webkit-transform:scale(1.3,1); /* Safari and Chrome */
+-moz-transform:scale(1.3,1); /* Firefox */
+-ms-transform:scale(1.3,1); /* IE 9 */
+-o-transform:scale(1.3,1); /* Opera */
+transform:scale(1.3,1); /* W3C */
+width: 12.3px;
+margin-left: 1.85px;
+margin-right: 10.35px;
+color: white;
+background: #556EE6;
+}
+
+#what-offer label {
+  font-size: 13px;
+  font-weight: normal;
+  cursor: pointer;
+  line-height: 1em;
+  min-width: 100px;
+  margin: 8px 0;
+}
+
+
+/* assignee */
+.asignee {
+  background: var(--color-white);
+  min-height: 40px;
+}
+
+.asignee .select2-container {
+  width: auto !important;
+}
+
+.asignee .select2-choices:after {
+   content: '+ Add a Name';
+   color: var(--color-orange);
+   cursor: pointer;
+   border: 1px solid var(--color-orange);
+   border-radius: 5px;
+   padding: 0 10px;
+   height: 24px !important;
+   display: flex;
+   align-items: center;
+ }
+
+.asignee .select2-choices {
+  display: inline-flex;
+  align-items: center;
+  width: auto !important;
+  flex-wrap: wrap;
+}
+
+.select2-search-field {
+  max-width: 100px;
+}
+
+.asignee .select2-search-choice {
+  display: inline-flex;
+  background: none !important;
+  color: var(--color-orange) !important;
+  border-color: var(--color-orange) !important;
+  margin: 0 !important;
+  height: 24px !important;
+  border-radius: 5px !important;
+  align-items: center;
+  padding: 0 10px !important;
+  flex-wrap: wrap;
+}
+
+.asignee .select2-search-choice.asignee_sended {
+  color: #556EE6 !important;
+  border-color: #556EE6 !important;
+}
+
+.asignee .select2-search-choice:not(.asignee_sended) {
+  padding-right: 20px !important;
+}
+
+.asignee .select2-search-choice.asignee_sended .select2-search-choice-close {
+  display: none;
+}
+
+.crm-activity-form-block-target_contact_id .select2-default, .asignee .select2-default {
+  width: 0 !important;
+}
+
+.crm-activity-form-block-target_contact_id .select2-choices, .asignee .select2-choices {
+  font-style: normal !important;
+}
+
+.select2-drop {
+  border: none !important;
+}
+
+
+/* form buttons  */
+.crm-submit-buttons {
+  margin-top: 14px;
+}
+
+
+.crm-submit-buttons .ui-button-icon, .ui-dialog-buttonset .ui-button-icon {
+  display: none !important;
+}
+
+
+/* close icon */
+.select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice abbr, .select2-search input, .select2-search-choice-close {
+  left: unset !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.select2-container .select2-choice .select2-arrow b:before, .select2-container .select2-choice abbr:before, .select2-search input:before, .select2-search-choice-close:before {
+  content: "" !important;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(var(--color-blue),var(--color-blue)), linear-gradient(var(--color-blue),var(--color-blue)), rgba(0, 0, 0, 0);
+  background-position: center;
+  background-size: 10px 1px,1px 10px;
+  background-repeat: no-repeat;
+  transform: rotate(
+45deg);
+  -webkit-transform: rotate(
+45deg);
+  display: block !important;
+  align-items: center;
+}
+
+.asignee .select2-search-choice-close:before {
+  background: linear-gradient(var(--color-orange),var(--color-orange)), linear-gradient(var(--color-orange),var(--color-orange)), rgba(0, 0, 0, 0);
+  background-position: center;
+  background-size: 10px 1px,1px 10px;
+  background-repeat: no-repeat;
+  display: inline-flex !important;
+}
+
+.crm-activity-form-block-target_contact_id .select2-search-choice-close {
+  margin-right: -15px;
+  margin-top: 6px;
+}
+
+.crm-activity-form-block-target_contact_id .select2-input {
+  margin-left: 15px !important;
+}
+
+.select2-choices {
+  display: flex;
+}
+
+.select2-search-choice, .select2-search-choice-close, .select2-choices:after {
+  display: flex;
+  align-items: center;
+}
+
+.created-by .select2-search-choice-close, .crm-option-edit-link  {
+  display: none !important;
+}
+
+.select2-container {
+  width: auto !important;
+}
+
+.required {
+  float: right;
+  font-style: italic;
+  color: var(--color-dark-gray);
+}

@@ -1,0 +1,337 @@
+/* 
+******************************************************
+*
+GENERAL 
+*
+******************************************************
+*/
+.summary-block {
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--color-box-shadow);
+  background: var(--color-white);
+  vertical-align: top;
+  margin-bottom: 24px;
+}
+
+.crm-summary-block th {
+  background: none !important;
+  border-top: 1px solid var(--color-table-divider) !important;
+}
+
+.crm-summary-block td {
+  border-color: var(--color-table-divider) !important;
+}
+
+.summary-left-block {
+  display: inline-block;
+  width: calc(70% - 24px);
+  margin-right: 21px !important;
+  vertical-align: top;
+}
+
+.summary-right-block {
+  display: inline-block;
+  width: calc(29.9%);
+
+  vertical-align: top;
+
+}
+
+.summary-menu {
+  margin-bottom: 10px;
+  margin-top: -13px;
+  
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.summary-menu a {
+  color: var(--color-dark-gray) !important;
+}
+
+.tile-menu a {
+  margin: 0 12px;
+}
+
+.summary-menu a:hover, .tile-menu .active {
+  color: var(--color-orange) !important;
+}
+
+.tile-menu {
+  position: absolute;
+  right: 14px;
+}
+
+.content.toggled .summary-left-block {
+  display: inline-block;
+  width: calc(calc(68% - 24px) + 38.5px);
+  margin-right: 21px !important;
+  vertical-align: top;
+}
+
+.content.toggled .summary-right-block {
+  display: inline-block;
+  width: calc(calc(30% - 24px) - 38.5px);
+  margin-right: 21px !important;
+  vertical-align: top;
+  margin: auto;
+}
+
+.summary-block .circle {
+  margin-right: 20px;
+}
+
+.summary-block .description {
+  margin: 0;
+}
+
+.w-90 {
+  width: calc(100% - 80px) !important;
+}
+
+.summary-table {
+  height: 300px; 
+  overflow-y:auto; 
+  margin: 0 20px;
+}
+
+.description {
+  margin: 5px 20px -15px 0px !important;
+  line-height: 1.5;
+}
+
+.icon-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1400px) { 
+  .summary-left-block, .summary-right-block {
+    width: calc(100%) !important; 
+
+  }
+}
+
+/* 
+******************************************************
+*
+CONVERSATION 
+*
+******************************************************
+*/
+
+.detail-all .arrow:hover {
+  border-color: var(--color-orange);
+}
+
+.conversation-detail, #conversations .active {
+  background: var(--color-lightest-gray);
+}
+
+.conversation-detail {
+  display:none;
+}
+
+.all .conversation-detail {
+  display: table-row;
+}
+
+.title {
+  display: inline-flex;
+  align-items: top;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.title p {
+  font-size: 13px;
+  color: var(--color-dark-gray);
+  letter-spacing: 0px;
+}
+
+.title h3 {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+ .activity.active td, .activity.active td a {
+   color: var(--color-blue) !important;
+ }
+ 
+ .activity td i {
+   color: var(--color-black) !important;
+ }
+ 
+ .activity:hover td .dropdown-menu a {
+   color: var(--color-black) !important;
+ }
+ 
+ .activity:hover td, .activity:hover td a {
+   color: var(--color-blue) !important;
+ }
+ 
+ .activity td a:hover {
+   color: var(--color-orange) !important;
+ }
+ 
+ .activity:hover .arrow {
+   border-color: var(--color-orange);
+ }
+ 
+ .conversation-detail .conversation-detail-assignee {
+   color: var(--color-blue) !important;
+   border: var(--color-blue) 1px solid;
+   border-radius: 5px;
+   padding: 0 5px;
+ }
+ 
+ 
+
+/* 
+******************************************************
+*
+MINI DASHBOARD 
+*
+******************************************************
+*/
+.dashboard-background {
+  background: url("https://mvp1portal.josiahventure.com/sites/all/themes/josiahventuretheme/images/Contact_Card_Background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 -190px; 
+  width: 100%;
+  height: calc(var(--dashboard-height) / 2);
+  border-radius: 20px 20px 0 0;
+  display: inline-flex;
+}
+
+.dashboard-image {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: calc(calc(var(--image-size) / -2) - 10px);
+  background: var(--color-white);
+  width: calc(var(--image-size) + 20px);
+  height: calc(var(--image-size) + 20px);
+  border-radius: calc(var(--image-size) + 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-image img {
+  width: var(--image-size);
+  height: var(--image-size);
+  border-radius: var(--image-size);
+  object-fit:cover;
+}
+
+.dashboard-name {
+  margin-left: calc(var(--image-size) + 77px);
+  margin-top: 0;
+  height: calc(var(--dashboard-height) / 2);
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-white);
+  font-size: 22px;
+  width: calc(calc(100% - calc(var(--image-size) + 100px)) / 2);
+}
+
+.dashboard-right {
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--color-white);
+  height: calc(var(--dashboard-height) / 2);
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(calc(100% - calc(var(--image-size) + 100px)) / 2);
+}
+
+.dashboard-content {
+  width: 100%;
+  margin-left: calc(var(--image-size) + 77px);
+  display: inline-flex;
+  align-items: center;
+}
+
+.dashboard-content-left {
+  
+  height: calc(var(--dashboard-height) / 2);
+  display: inline-flex;
+  align-items: center;
+  width: calc(calc(100% - calc(var(--image-size) + 100px)) / 2);
+}
+
+.dashboard-content-right {
+  height: calc(var(--dashboard-height) / 2);
+  display: inline-flex;
+  align-items: center;
+  width: calc(calc(100% - calc(var(--image-size) + 100px)) / 2);
+}
+
+.dashboard-content .inline {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dashboard-content .inline div {
+  margin-bottom: 4px;
+  margin-top: 4px;
+  color: var(--color-dark-gray);
+}
+
+.dashboard-content .bold div {
+  font-weight: bold;
+  color: var(--color-darkest-gray);
+}
+
+.dashboard-add-my-contact, .dashboard-remove-my-contact {
+  position: absolute;
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dashboard-add-my-contact span, .dashboard-remove-my-contact span {
+  display: inline-flex;
+  align-items: center;
+  order: 3;
+  margin-left: -10px;
+  color: var(--color-lightest-gray);
+}
+
+.dashboard-actions {
+  position: absolute;
+  margin-top: calc(calc(var(--dashboard-height) / 3) - 9px);
+  margin-left:19px;
+} 
+
+.fa-ellipsis-h {
+  border-radius: 50%;
+  padding: 10px;
+  margin: -10px 0;
+}
+
+.fa-ellipsis-h:hover {
+  background: var(--color-orange);
+  color: white;
+}
+/* 
+******************************************************
+*
+RELATIONSHIP
+*
+******************************************************
+*/

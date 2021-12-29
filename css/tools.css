@@ -1,0 +1,245 @@
+#slider {
+display: flex;
+justify-content: space-between;
+color: var(--color-black);
+margin-left: 12.5px;
+margin-right: 9.5px;
+margin-top: 10px;
+}
+
+#slider option {
+font-weight: bold;
+}
+
+.slider {
+width: 100%;
+background: var(--color-green);
+-webkit-appearance: none;
+height: 9px;
+border-radius: 5px;
+outline: none;
+cursor: pointer;
+
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+height: 32px;
+width: 32px;
+border-radius: 30px;
+background: var(--color-green);
+margin-top: -13px;
+outline: 4px solid var(--color-white);
+}
+
+.text {
+color: var(--color-dark-gray);
+line-height: 18px;
+}
+
+.slider-label {
+font-weight: bold;
+text-align: center;
+font-size: 15px;
+margin-bottom: 2px;
+}
+
+.history {
+background: var(--color-lightest-gray);
+height: 237px;
+padding: 10px;
+}
+
+.tool-note {
+width: 200px;
+border: none;
+outline: none;
+background: var(--color-lightest-gray);
+padding: 10px;
+resize: none;
+line-height: 18px;
+}
+
+.tool-note::placeholder {
+font-style: italic;
+color: var(--color-dark-gray);
+}
+
+.tool-history-row .date, .tool-history-row .name  {
+color: var(--color-blue) !important;
+
+}
+
+.tool-history-row .date, .tool-history-row .edit {
+display: inline-block;
+}
+
+.tool-history-row {
+line-height: 20px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.tool-history-row .crm-option-edit-link {
+display: block !important;
+}
+
+.tool-detail .fancy-scroll::-webkit-scrollbar-thumb, .ui-dialog-content::-webkit-scrollbar-thumb, .tool-instruction-text.fancy-scroll::-webkit-scrollbar-thumb {
+border: 3px var(--color-lightest-gray) solid;
+}
+
+button[data-identifier="_qf_CustomData_upload_new"] {
+display: none;
+}
+
+.tool-instruction {
+margin-left: auto;
+}
+
+.tool-footer {
+  display: flex; 
+  align-items: center; 
+  position: absolute;
+  bottom: 0px;
+  width:calc(100% - 278px);
+}
+
+.tool-instructions {
+  height: 372px;
+  display: none;
+  padding: 24px;
+}
+
+.ui-dialog-content {
+  height: auto !important;
+}
+
+.ui-dialog-content, .ui-dialog {
+  padding: 0 !important;
+}
+
+.tool-detail {
+  padding: 24px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-left: -1px;
+  box-shadow: 0px 10px 20px #12263F1A;
+}
+
+.tool-instruction-text {
+  background: var(--color-lightest-gray);
+  color: var(--color-dark-gray);
+  overflow: auto;
+  height: 264px;
+  padding: 24px;
+}
+
+/* summary tools */
+.tool-dropdown {
+    color: var(--color-orange) !important;
+    font-size: 15px;
+    font-weight: 600;
+    width: auto; 
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .tool-dropdown .arrow {
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+  
+  #tools {
+    height: 240px;
+  }
+  
+  #tools .tool {
+    border: 2px solid var(--color-light-purple-gray);
+    border-radius: 25px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+  
+  #tools .tool.wide { 
+    width: 92px !important;
+  }
+  
+  #tools .tool a {
+    color: var(--color-dark-gray) !important;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  #tools .dropdown-menu {
+    width: 100%;
+    border: none;
+    background: none !important;
+  }
+  
+  .tool-groups .heading {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-table-divider);
+  }
+  
+  .tool-groups .heading:nth-of-type(1) { 
+    border-top: 1px solid var(--color-table-divider);
+  }
+  
+
+  
+  .tool-group-left, .tool-group-right {
+    display: inline-flex;
+    line-height: 1.5;
+    width: auto;
+  }
+  
+  .tool-group-left {
+    flex-direction: column;
+    margin-right: 5px;
+  }
+  
+  .tool-group-right {
+    vertical-align: bottom;
+    margin-bottom: 5px;
+  }
+  
+  a.tool-group-label {
+    font-weight: bold;
+    color: var(--color-green) !important;
+    font-size: 15px;
+  }
+  
+  .card-body {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .tool-group {
+    margin: 15px 0;
+  }
+  
+  .tool-groups h5 {
+    display: inline-flex; 
+    align-items: center;
+  } 
+  .tool-dropdown:not(.collapsed) .arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left: 2px;
+    margin-right: 8px;
+  }
+  
+  .tool-dropdown:not(.collapsed) {
+    color: var(--color-green) !important;
+  }
+  
+  .tool-dropdown:not(.collapsed) + .tool, .tool-dropdown:not(.collapsed) + .tool + .tool {
+    display: none !important;
+  }
