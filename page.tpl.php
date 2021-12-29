@@ -10,7 +10,7 @@ if ( $user->uid ) {
       .row {
         margin-top: -50px !important;
       }
-    </style>
+    </style> 
     <?php
     print render($page['content']);
   } else {
